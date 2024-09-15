@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando...</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffdede;
+            font-family: Arial, sans-serif;
+        }
+        .loading-container {
+            text-align: center;
+            color: #fff;
+        }
+        .loading-logo {
+            width: 200px;
+            height: 200px;
+            background: url('logo.jpg') no-repeat center center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .loading-text {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="loading-logo"></div>
+        <div class="loading-text">Carregando...</div>
+    </div>
+    <script>
+        setTimeout(function() {
+            window.location.href = 'inicial.html'; // Redireciona para a página inicial
+        }, 6000); // 6000 ms = 6 segundos
+    </script>
+</body>
+</html>
